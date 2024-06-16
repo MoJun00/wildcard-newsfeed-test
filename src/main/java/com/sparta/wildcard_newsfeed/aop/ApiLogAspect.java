@@ -15,10 +15,10 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 @RequiredArgsConstructor
 public class ApiLogAspect {
 
-    @Before("within(@org.springframework.web.bind.annotation.RestController *)")
+    /*@Before("within(@org.springframework.web.bind.annotation.RestController *)")
     public void logBefore() {
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         HttpServletRequest request = attributes.getRequest();
         log.info("URI: {}, Method: {}", request.getRequestURI(), request.getMethod());
-    }
+    }*/
 }

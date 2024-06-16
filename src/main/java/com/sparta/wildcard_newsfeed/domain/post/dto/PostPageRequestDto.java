@@ -3,6 +3,7 @@ package com.sparta.wildcard_newsfeed.domain.post.dto;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
@@ -10,6 +11,7 @@ import lombok.ToString;
 @Getter
 @NoArgsConstructor
 @ToString
+@AllArgsConstructor
 public class PostPageRequestDto {
     @Schema(description = "선택 페이지", example = "1")
     @NotNull(message = "선택 페이지 필수 입력 값입니다.")

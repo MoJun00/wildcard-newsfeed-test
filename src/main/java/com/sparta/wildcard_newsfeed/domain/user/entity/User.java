@@ -33,7 +33,7 @@ public class User extends TimeStampEntity {
     private String profileImageUrl;
 
     @Builder
-    public User(String usercode, String password, String name, String email, String introduce, UserStatusEnum userStatus, LocalDateTime authUserAt, UserRoleEnum userRoleEnum) {
+    public User(String usercode, String password, String name, String email, String introduce, UserStatusEnum userStatus, LocalDateTime authUserAt, UserRoleEnum userRoleEnum, String profileImageUrl) {
         this.usercode = usercode;
         this.password = password;
         this.name = name;
@@ -42,6 +42,7 @@ public class User extends TimeStampEntity {
         this.userStatus = userStatus;
         this.authUserAt = authUserAt;
         this.userRoleEnum = userRoleEnum;
+        this.profileImageUrl = profileImageUrl;
     }
 
     /**
