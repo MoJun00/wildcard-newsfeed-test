@@ -47,7 +47,8 @@ public class UserService {
 
         //Bcrypt 암호화
         String pwd = passwordEncoder.encode(requestDto.getPassword());
-        User user = userRepository.save(new User(usercode, pwd, email));
+        User user = new User(usercode, pwd, email);
+        userRepository.save(user);
 
         //autocode 생성 및 등록
         AuthCodeHistory authCodeHistory = AuthCodeHistory.builder()
