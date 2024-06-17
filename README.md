@@ -1,3 +1,9 @@
+직접 만든 AOP
+src -> main -> java -> wildcard_newsfeed -> apo -> ApiLogAop_JunMo
+직접 만든 Test
+test -> java -> wildcard_newsfeed -> domain.user.dto -> junmo -> 파일 5개
+
+
 # wildcard-newsfeed
 
 # 커밋 컨벤션
